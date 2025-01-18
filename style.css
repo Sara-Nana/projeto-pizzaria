@@ -20,7 +20,7 @@ header {
     top:0;
     right:0;
     height:80px;
-    background-color:#483328; /*#399ade*/
+    background-color:#483328; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@ header {
 .menu-openner {
     margin-right: 15px;
     font-size: 26px;
-    background-color: #ce8d00cd; /*da9444*/
+    background-color: #ce8d00cd; 
     padding: 5px 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -50,7 +50,7 @@ header {
 }
 
 aside {
-    background-color:#775847; /*#9ccbe6*/
+    background-color:#775847; 
     width:0vw;
     font-family:'Hepta Slab', Helvetica, Arial;
     transition:all ease .2s;
