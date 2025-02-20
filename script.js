@@ -196,7 +196,6 @@ function updateCart() {
         qs('aside').classList.remove('show');
         qs('aside').style.left = '100vw';
     };
-        
 };
 
 qs('.menu-openner').addEventListener('click', ()=>{
@@ -213,6 +212,13 @@ qs('.menu-closer').addEventListener('click', ()=>{
 function customAlert() {
     let overlay = document.querySelector('.overlay'); 
     let customAlert = document.querySelector('.custom-alert');
+    let notification = document.querySelector('.notification');
+
+    if (cart.length > 0) {
+        notification.innerHTML = 'Pedido realizado com sucesso!';
+    } else {
+        notification.innerHTML = 'Seu carrinho está vazio!';
+    }
 
     overlay.style.display = 'block';
     customAlert.style.display = 'flex';
@@ -220,7 +226,7 @@ function customAlert() {
     setTimeout(function() { 
         customAlert.style.opacity = '1'; 
         overlay.style.opacity = '1'; 
-    }, 150);
+    }, 200);
     
     qs('.custom-alert-button').addEventListener('click', ()=>{
         overlay.style.display = 'none';
@@ -233,17 +239,6 @@ function customAlert() {
 }
 
 qs('.cart--finalizar').addEventListener('click', ()=>{
-    let overlay = document.querySelector('.overlay'); 
-    let finish = document.querySelector('.custom-alert');
-
-    overlay.style.display = 'block';
-    finish.style.display = 'flex';
-    finish.innerHTML = 'Compra finalizada com sucesso!';
-
-    setTimeout(function() { 
-        finish.style.opacity = '1'; 
-        overlay.style.opacity = '1'; 
-    }, 150);
-
+    customAlert();
 });
     

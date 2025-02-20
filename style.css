@@ -42,9 +42,9 @@ header {
     margin-right:10px;
 }
 .menu-closer {
+    display: block;
     width:32px;
     height:32px;
-    display:none;
     font-size: 30px;
     cursor: pointer;
 }
@@ -461,7 +461,6 @@ h1 {
     z-index: 1000; 
     text-align: center; 
     opacity: 0; 
-    transition: opacity 0.4s ease;
 }
 
 .custom-alert-button {
@@ -489,4 +488,5 @@ h1 {
 }
 .menu-closer .material-symbols-outlined {
     font-size: 35px;
+    color: #FFF;
 }
