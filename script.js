@@ -207,6 +207,7 @@ qs('.menu-openner').addEventListener('click', ()=>{
 });
 qs('.menu-closer').addEventListener('click', ()=>{
     qs('aside').style.left = '100vw';
+    console.log('oi')
 });
 
 function customAlert() {

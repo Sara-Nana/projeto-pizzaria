@@ -42,7 +42,7 @@ header {
     margin-right:10px;
 }
 .menu-closer {
-    display: block;
+    display: none;
     width:32px;
     height:32px;
     font-size: 30px;
@@ -51,10 +51,10 @@ header {
 
 aside {
     background-color:#775847; 
-    width:0vw;
+    width: 0vw;
     font-family:'Hepta Slab', Helvetica, Arial;
-    transition:all ease .2s;
-    overflow-x:hidden;
+    transition: all ease .2s;
+    overflow-x: hidden;
 }
 aside.show {
     width:30vw;
@@ -395,7 +395,7 @@ h1 {
     }
 
     .menu-closer {
-        display:block;
+        display: block;
     }
 
     .pizzaWindowArea {
